@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/meusitereact/static/css/main.e7b95e3d.css",
-    "main.js": "/meusitereact/static/js/main.3e79d973.js",
+    "main.js": "/meusitereact/static/js/main.416a6ebe.js",
     "static/js/453.ca61dc1d.chunk.js": "/meusitereact/static/js/453.ca61dc1d.chunk.js",
     "index.html": "/meusitereact/index.html",
     "main.e7b95e3d.css.map": "/meusitereact/static/css/main.e7b95e3d.css.map",
-    "main.3e79d973.js.map": "/meusitereact/static/js/main.3e79d973.js.map",
+    "main.416a6ebe.js.map": "/meusitereact/static/js/main.416a6ebe.js.map",
     "453.ca61dc1d.chunk.js.map": "/meusitereact/static/js/453.ca61dc1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b95e3d.css",
-    "static/js/main.3e79d973.js"
+    "static/js/main.416a6ebe.js"
   ]
 }
