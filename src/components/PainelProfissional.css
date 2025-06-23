@@ -1,0 +1,279 @@
+.painel-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 300px 1fr;
+}
+
+/* Perfil do Profissional */
+.prof-sidebar {
+  position: sticky;
+  top: 2rem;
+}
+
+.prof-perfil {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.prof-foto-container {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.prof-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.prof-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prof-foto:hover .foto-overlay {
+  opacity: 1;
+}
+
+.foto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.foto-input {
+  display: none;
+}
+
+.prof-info h1 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: #333;
+  text-align: center;
+}
+
+.prof-detalhes {
+  color: #666;
+}
+
+.prof-detalhes p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Área Principal */
+.prof-main {
+  display: grid;
+  gap: 2rem;
+}
+
+.horarios-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.container-titulo {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horarios-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.dia-semana {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fafbfc;
+}
+
+.dia-titulo {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+  text-align: center;
+}
+
+.horarios-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.horario-btn {
+  min-width: 54px;
+  padding: 0.5rem 0.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  outline: none;
+  margin-bottom: 0.2rem;
+}
+
+.horario-btn.disponivel {
+  background: #22c55e;
+  color: #fff;
+}
+
+.horario-btn.ocupado {
+  background: #ef4444;
+  color: #fff;
+}
+
+.horario-btn:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 2px 8px rgba(34,197,94,0.08);
+}
+
+/* Solicitações */
+.solicitacoes-container, .historico-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.solicitacao-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.solicitacao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.solicitacao-aluno {
+  font-weight: 500;
+  color: #333;
+}
+
+.solicitacao-data {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.solicitacao-acoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-aceitar, .btn-recusar {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.btn-aceitar {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-recusar {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-aceitar:hover, .btn-recusar:hover {
+  opacity: 0.9;
+}
+
+/* Histórico */
+.historico-item {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.historico-item:last-child {
+  border-bottom: none;
+}
+
+.historico-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.historico-aluno {
+  font-weight: 500;
+  color: #333;
+}
+
+.historico-data {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.historico-detalhes {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.historico-detalhes p {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .painel-container {
+    grid-template-columns: 1fr;
+  }
+
+  .prof-sidebar {
+    position: static;
+  }
+
+  .horarios-grid {
+    grid-template-columns: 1fr;
+  }
+} 
